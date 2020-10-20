@@ -5,12 +5,14 @@
 
 3 - Explore the interpreter.
 	- Execute lines with syntax error and see what the response is.
-        * What happens if you leave out a quotation or parentheses?
-        * How helpful are the error messages?
+        * What happens if you leave out a quotation or parentheses? I get different errors, mostly unexpected EOL
+        * How helpful are the error messages? Pretty helpful if you know what they mean
 	- Use the help() function to explore what you can do with the interpreter.
         For example execute help('print').
         press q to exit.
 	- Use the interpreter to perform simple math.
-	- Calculate how many seconds are in a year.
+	- Calculate how many seconds are in a year. 31536000
 
 '''
+
+print("Hello, world!")
