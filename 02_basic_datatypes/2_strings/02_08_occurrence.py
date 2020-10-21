@@ -7,3 +7,12 @@ Letter input: o
 Result: 4
 
 '''
+
+# String of words from the user
+string = input("Please write something here: ")
+
+# Letter from the user
+letter = input("Please write a letter: ")
+
+# Find the index of first occurrence in string
+print(string.find(letter))
