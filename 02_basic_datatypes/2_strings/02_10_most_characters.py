@@ -22,7 +22,23 @@ len_1 = len(inp_1)
 len_2 = len(inp_2)
 len_3 = len(inp_3)
 
+'''
+
 print(len_1, ",", inp_1)
 print(len_2, ",", inp_2)
 print(len_3, ",", inp_3)
+
+'''
+
+# print only the string
+if len_1 > len_2 & len_1 > len_3:
+    print(f"{len_1}, {inp_1}")
+elif len_2 > len_1 & len_2 > len_3:
+    print(f"{len_2}, {inp_2}")
+elif len_3 > len_1 & len_3 > 2:
+    print(f"{len_3}, {inp_3}")
+else:   print("This is impossible")
+
+
+
 
