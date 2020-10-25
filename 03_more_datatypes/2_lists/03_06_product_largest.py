@@ -9,3 +9,19 @@ that we haven't looked at yet. See if you can figure it out, otherwise
 come back to this task after you have learned about loops)
 
 '''
+
+# Take in 10 numbers from the user and place in a list
+
+L = []
+
+while len(L) < 10:
+    user_input = int(input("Please insert a number: "))
+    L.append(user_input)
+
+L.sort()
+print("The largest number in the list is: ", L[-1])
+
+product = 1
+for i in L:
+   product = product * i
+print("The product of all elements in the list is: ", product)
