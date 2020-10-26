@@ -15,11 +15,7 @@ while len(num_list) < 10:
     user_input = input("Please insert a number: ")
     num_list.append(user_input)
 
-print("These are ocurrences number 2, 4, 6, 8, 10: ", num_list[::2])
-
-new_list2 = []
-i += 2
-for i in num_list:
-    new_list2.append(i)
-
-print(new_list2)
+list1 = (num_list[1::2])
+list2 = (num_list[::2])
+list2.reverse()
+print(list1 + list2)
