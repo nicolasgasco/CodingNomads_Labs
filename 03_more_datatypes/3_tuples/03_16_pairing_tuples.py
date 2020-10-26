@@ -11,3 +11,14 @@ Note: This lab might be challenging! Make sure to discuss it with your mentor
 or chat about it on our forum.
 
 '''
+
+# Takes in a list of numbers
+num_list = list(input("Please insert a list of numbers: "))
+num_list.sort()
+print(num_list)
+
+
+# Sorts them
+
+# Store them in tutple of two in a list
+# print each tuple
