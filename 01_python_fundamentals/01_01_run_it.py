@@ -15,4 +15,44 @@
 
 '''
 
-print("Hello, world!")
+# def right_justify(s):
+#    print(" "*(70-len(s))+ s)
+# right_justify("Ciao bella mia")
+
+
+'''
+
+def do_twice(f, val):
+    f(val)
+    f(val)
+
+def print_spam(val):
+    print('spam')
+
+def print_twice(bruce):
+    print(bruce)
+    print(bruce)
+
+def do_four(f, val):
+   do_twice(f, val)
+   do_twice(f, val)
+
+do_four(print_spam, "Ciao")
+
+'''
+
+
+def titlecase(text):
+    titlecase =   []
+    for word in text.split():
+        cap_word = word.capitalize()
+        titlecase.append(cap_word)
+    return " ".join(titlecase)
+
+user_input = input("Enter your sentence (type exit to quit): ")
+print(titlecase(user_input))
+
+while user_input.lower() != "exit":
+    user_input = input("Enter your sentence (type exit to quit): ")
+    crash_blossom = titlecase(user_input)
+    print(crash_blossom)

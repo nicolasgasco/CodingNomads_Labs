@@ -27,7 +27,7 @@ for x, y in dict_1.items():
             dict_3[x] = y
         elif z not in dict_1 and z not in dict_3:
             dict_3[z] = h
-            
+
 print(dict_3)
 
 
