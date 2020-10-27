@@ -9,5 +9,7 @@ For example if n is 3, you print:
 ***
 
 '''
-
-n = 5
+n = 0
+while n < 3:
+    n += 1
+    print("*" * n)

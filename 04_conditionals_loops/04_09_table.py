@@ -8,3 +8,9 @@ Use a loop to print the following table to the console:
  40 41 42 43 44 45 46 47 48 49
 
 '''
+new_list = []
+for n in range(0, 50):
+    new_list.append(n)
+i = 1
+str(new_list)
+print(str(f"{new_list[0:10]}\n{new_list[10:20]}\n{new_list[20:30]}\n{new_list[30:40]}\n{new_list[40:50]}"))

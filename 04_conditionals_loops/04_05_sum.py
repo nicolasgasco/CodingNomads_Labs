@@ -7,3 +7,13 @@ The output of your calculation should therefore look like this:
 
 The sum is: 5050
 '''
+
+# two numbers from user, they rapresent range
+start = int(input("Please enter a number: "))
+end = int(input("Please enter another number: "))
+
+num_list = range(start, end+1)
+all_num = []
+for n in num_list:
+    all_num.append(n)
+print(sum(all_num))
