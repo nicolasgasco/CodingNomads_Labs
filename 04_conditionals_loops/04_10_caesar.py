@@ -21,6 +21,7 @@ for i in alphabet:
     a += 1
     my_dict[i] = a
 
+
 for w in new_secret:
     if w in alphabet:
         x = my_dict.get(w)
