@@ -18,3 +18,36 @@ CLASSES AND INHERITANCE
     Any class attributes you could add?
 
 '''
+
+class Movie:
+    """Class used to describe movies with year and title"""
+    def __init__(self, year, title):
+        self.year = year
+        self.title = title
+
+    def __repr__(self):
+        return f"{self.__class__.__name__}({self.year}, {self.title})"
+
+class RomCom(Movie):
+    "Subclass used for romantic comedies"
+
+    def __repr__(self):
+        return f"{self.__class__.__name__}({self.year}, {self.title})"
+
+
+class ActionMovie(Movie):
+    def __init__(self, year, title, pg = 13):
+        super().__init__(year, title)
+        self.pg = 13
+
+    def __repr__(self):
+        return f"{self.__class__.__name__}({self.year}, {self.title})"
+
+
+m1 = Movie(1998, "La vita è bella")
+rc1 = RomCom(2002, "Baciami cazzo")
+am1 = ActionMovie(1990, "Mission impossible")
+
+print(m1)
+print(rc1)
+print(am1)
