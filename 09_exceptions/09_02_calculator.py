@@ -8,3 +8,21 @@ the script should handle:
 Test it and make sure it does not crash when you enter incorrect values.
 
 '''
+
+
+while True:
+    try:
+        num1 = int(input("Please enter a number: "))
+        num2 = int(input("Please enter another number: "))
+        res = num1 / num2
+    except ValueError:
+        print(f"Please insert a number, not a string")
+
+    except ZeroDivisionError:
+        print(f"You cannot divide by 0.")
+
+    except Exception:
+        print(f"An error occurred")
+
+    else:
+        print(res)
