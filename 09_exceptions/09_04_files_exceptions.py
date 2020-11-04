@@ -26,16 +26,34 @@ first 100 characters of any of the files contain the string "Prince".
 
 # open war and peace, read the file content and store in variable
 with open("books/war_and_peace.txt", "r") as fin:
-    war_peace = fin.read()
+        war_peace = []
+        for word in fin.readlines():
+            war_peace.append(word)
 
-# print(war_peace)
-
+# Open crime_and_punishment.txt and overwrite the whole content with an empty string
 with open("books/crime_and_punishment.txt", "w") as fout:
-    fout.write(str(""))
+        fout.write("")
 
-for file in
+# 3) Loop over all three files and print out only the first character each. Your program
+#     should NEVER terminate with a Traceback.
+#
+#     a) Which Exception can you expect to encounter? Why?
+#
+#     b) How do you catch it to avoid the program from terminating with a Traceback?
+
+def print_first_char(file):
+    try:
+        with open(file, "r") as fin:
+            list = []
+            for letter in fin.readline():
+                list.append(letter)
+    except FileNotFoundError:
+        print("Please insert a valid file name")
+    except Exception:
+        print("Something went wrong")
+    else:
+        print(list[0])
 
 
-
-
-
+print_first_char("books/war_and_peace.txt")
+#print_first_char("books/pride_and_prejudice.txt")
