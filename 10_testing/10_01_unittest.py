@@ -7,3 +7,9 @@ test should pass.
 Also include a test that does not pass.
 
 '''
+
+def square_of(num1, num2):
+    sqr = num1 ** num2
+    return sqr
+
+print(square_of(2,2))
