@@ -10,15 +10,14 @@ Write a function called has_no_e that returns True if the given word doesn’t h
 Write a program that reads words.txt and prints only the words that have no “e”. Compute the percentage of words in the list that have no “e”.
 """
 
-def has_no_e(file, letter):
+def has_no_letter(word, letter):
     """Function used to return True if a given word doesn't have the letter e in it."""
-    with open(file, "r") as fin:
-        words = []
-        for word in fin.readlines():
-            if word.find(letter) ==  -1:
-                word = word.strip()
-                words.append(word)
-        return words
+    if letter.lower() in word.lower():
+        return False
+    return True
+
+print(has_no_letter("ciao", "J"))
+
 
 def percentile(num1, num2):
     percentage = (num1 * 100) / num2
@@ -31,17 +30,11 @@ def compute_difference(file, letter):
         total = []
         for word in fin.readlines():
             word = word.strip()
-            if word.find(letter) == -1:
-                total.append(word)
+            total.append(word)
+            if letter not in word:
                 less_letter.append(word)
-            else:
-                total.append(word)
-
         total_count = len(total)
         less_letter_count = len(less_letter)
         return int(percentile(less_letter_count, total_count))
-
-
-has_no_e("words.txt", "e")
 
 print(compute_difference("words.txt", "e"))
