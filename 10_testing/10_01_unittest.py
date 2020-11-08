@@ -7,9 +7,15 @@ test should pass.
 Also include a test that does not pass.
 
 '''
+import math
+def root_multiply(num1, num2):
+    """Function to calculate the squared root of num1 and multiply it by num2"""
+    try:
+        rt = math.sqrt(num1)
+    except Exception:
+        print("Please don't use a negative value")
+    else:
+        result = rt * num2
+        return result
 
-def square_of(num1, num2):
-    sqr = num1 ** num2
-    return sqr
-
-print(square_of(2,2))
+print(root_multiply(-2,2))
