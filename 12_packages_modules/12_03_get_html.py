@@ -9,3 +9,6 @@ TIP:
     very common. head over to SO and find a solution!
 
 '''
+import requests as req
+coding_nomads = req.get("https://nicolasgasco.com")
+print(coding_nomads.text)
