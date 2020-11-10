@@ -1,13 +1,7 @@
 import unittest
+from uunittest import root_multiply
 import math
 
-
-def root_multiply(num1, num2):
-    """Function to calculate the squared root of num1 and multiply it by num2"""
-    if num1 < 0:
-        raise ValueError("Please don't use a negative value")
-    rt = math.sqrt(num1)
-    return rt * num2
 
 class TestExercise1(unittest.TestCase):
     """Class to test 10_01_unittest"""
